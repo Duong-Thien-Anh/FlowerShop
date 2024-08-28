@@ -1,0 +1,133 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+@using BanHoa.Models;
+@model List<CartItems>
+<div style="height: 100px;"></div>
+<div class="background-giohang">
+    <h2 style="text-align:center; color:white">GIỎ HÀNG CỦA BẠN</h2>
+        <div class="giohang-container">
+            <div class="giohang">
+                <div class="tieudeGH">
+                    <table class="table">
+                        <tr>
+                            <th>MÃ HOA</th>
+                            <th>TÊN HOA</th>
+                            <th>ẢNH BÌA</th>
+                            <th>SỐ LƯỢNG</th>
+                            <th>ĐƠN GIÁ</th>
+                            <th>THÀNH TIỀN</th>
+                            <th></th>
+                            <th>
+
+                            </th>
+                            <th></th>
+
+                        </tr>
+
+
+                        @*@foreach (var item in Model)
+                            {
+                                    <tr>
+                                        <td width="12%">@item.iMaSach</td>
+                                        <td width="26%">@item.sTenSach</td>
+                                        <td width="22%"><img src="@Url.Content("/Contents/img/HinhAnhSP/" + @item.sAnhBia)" width="50%" /></td>
+                                        <td width="12%"><input type="number" style="width:50px;" value="@item.iSoLuong" name="txtSoLuong" min="1" /></td>
+                                        <td width="12%">@String.Format("{0:0,0}", item.dDonGia).Replace("'", ".") VND</td>
+                                        <td width="16%">@String.Format("{0:0,0}", item.dThanhTien).Replace("'", ".") VND</td>
+                                        <td>@Html.ActionLink("Details", "Details", "Sach", new { id = item.iMaSach }, new { @class = "btn btn-primary" })</td>
+                                        <td>@Html.ActionLink("Delete", "XoaGioHang", "GioHang", new { MaSP = item.iMaSach }, new { @class = "btn btn-danger" })</td>
+                                        <td>@Html.ActionLink("Update", "CapNhatGioHang", "GioHang", new { MaSP = item.iMaSach }, new { @class = "btn btn-primary" })</td>
+
+                                    </tr>
+                            }*@
+
+                        @foreach (var item in Model)
+                        {
+                            using (Html.BeginForm("CapNhatGioHang", "Cart", new { MaSP = item.sMaHoa }, FormMethod.Post))
+                            {
+                                <tr class="spgh">
+                                    <td width="12%">@item.sMaHoa</td>
+                                    <td width="26%">@item.sTenHoa</td>
+                                    <td width="22%"><img src="@Url.Content("/Content/img/" + @item.sHinhAnh)" width="50%" /></td>
+                                    <td width="12%"><input type="number" style="width:100px;" value="@item.iSoLuong" name="txtSoLuong" min="1" /></td>
+                                    <td width="12%">@String.Format("{0}", item.dDonGia).Replace(",", ".").000 VND</td>
+                                    <td width="16%">@String.Format("{0}", item.dThanhTien).Replace(",", ".").000 VND</td>
+                                    <td>@Html.ActionLink("Details", "Details", "Product", new { id = item.sMaHoa }, new { @class = "btn btn-primary" })</td>
+                                    <td>@Html.ActionLink("Delete", "XoaGioHang", "Cart", new { MaSP = item.sMaHoa }, new { @class = "btn btn-primary" })</td>
+
+                                    <td><input type="submit" value="Cập nhật" class="btn btn-warning" /></td>
+                                </tr>
+                            }
+
+                        }
+
+                    </table>
+                </div>
+                <div style="height:20px;"></div>
+                <div class="ketquagh">
+                    <div class="thanhtien">
+
+                    </div>
+                    <table class="table">
+                        <tr>
+                            <td colspan="3" style="color:blue;font-weight:bold;text-align:right">Tổng số lượng: </td>
+                            <td style="color:red;font-weight:bold">@ViewBag.TongSoLuong</td>
+                            <td colspan="3" style="color:blue;font-weight:bold;text-align:right">Thành tiền : </td>
+                            <td style="color:red;font-weight:bold">@String.Format("{0}", ViewBag.TongThanhTien).Replace(",", ".").000 VND</td>
+
+                        </tr>
+                    </table>
+                    <table class="table">
+                        <tr>
+                            @using (Html.BeginForm("Index", "Payment", FormMethod.Post))
+                            {
+                                <td></td>
+                                <td>
+                                    <input type="radio" id="DCKH" name="DiaChi" checked onchange="DisableDiaChiText();" />
+                                    <label for="DCKH">Địa chỉ Khách Hàng</label>
+                                </td>
+                                <td>                       </td>
+                                <td>
+                                    <input type="radio" id="DCKhac" name="DiaChi" onchange="EnableDiaChiText();" />
+                                    <label for="DCKhac">Địa chỉ khác: <input type="text" disabled="disabled" id="txtDiaChi" name="txtDiaChi" value="@Session["DiaChi"]" defaultvalue="@Session["DiaChi"]" required /></label>
+                                </td>
+                                <td>                       </td>
+                                <td><button type="submit" class="btn btn-primary">Thanh Toán</button></td>
+                            }
+
+                        </tr>
+                    </table>
+                    <div class="xoatall">
+                        @Html.ActionLink("Xóa tất cả", "XoaGioHang_All", "Cart", null, new { @class = "btn btn-primary" })
+                    </div>
+                </div>
+
+            </div>
+        </div>
+</div>
+
+<script>
+        function EnableDiaChiText()
+        {
+            var x = document.getElementById('DCKhac')
+            if (x.checked == true)
+            {
+                document.getElementById('txtDiaChi').disabled = false
+                document.getElementById('txtDiaChi').value = ''
+            }
+        }
+        function DisableDiaChiText()
+        {
+            var x = document.getElementById('DCKH')
+            if (x.checked == true)
+            {
+                var a = document.getElementById('txtDiaChi')
+                a.disabled = true;
+                a.value = '@Session["DiaChi"]'
+            }
+        }
+</script>
+

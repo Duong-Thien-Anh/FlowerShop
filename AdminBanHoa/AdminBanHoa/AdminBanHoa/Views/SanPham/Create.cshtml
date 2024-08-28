@@ -1,0 +1,101 @@
+﻿@model AdminBanHoa.Models.SanPham
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_Layout1.cshtml";
+}
+
+<h2>Thêm Sản Phẩm</h2>
+<p style="padding-left:20px;padding-top:20px;">
+    @Html.ActionLink("Back to List", "Index", null, new { @class = "btn btn-primary" })
+</p>
+<div class="background-dsdonhang">
+    <div class="content1">
+        <div class="dsdonhang">
+            @using (Html.BeginForm("Create", "SanPham", System.Web.Mvc.FormMethod.Post, new { enctype = "multipart/form-data" }))
+            {
+                @Html.AntiForgeryToken()
+
+                <div class="form-horizontal">
+                    @Html.ValidationSummary(true)
+
+                    <div class="form-group">
+                        <div class="control-label col-md-2">Mã Sản Phẩm</div>
+                        <div class="col-md-10">
+                            <input name="MaSP" required type="text" />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="control-label col-md-2">Tên Loại Sản Phẩm</div>
+                        <div class="col-md-10">
+                            @*@Html.EditorFor(model => model.MaLoaiSP)
+                                @Html.ValidationMessageFor(model => model.MaLoaiSP)*@
+                            @Html.DropDownListFor(model => model.MaLoaiSP, (IEnumerable<SelectListItem>)ViewBag.MaLoaiSP, new { @class = "form-control" })
+                            @*@Html.DropDownList(name: "MaLoaiSP", selectList: null, htmlAttributes: new { @class = "form-control"})*@
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="control-label col-md-2">Tên Nhà Cung Cấp</div>
+                        <div class="col-md-10">
+                            <input name="TenNCC" required type="text" />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="control-label col-md-2">Tên Sản Phẩm</div>
+                        <div class="col-md-10">
+                            <input name="TenSP" required type="text" />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="control-label col-md-2">Màu Sắc</div>
+                        <div class="col-md-10">
+                            <input name="MauSP" required type="text" />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="control-label col-md-2">Giá</div>
+                        <div class="col-md-10">
+                            <input type="number" name="Gia" min="1" required />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="control-label col-md-2">Mô Tả</div>
+                        <div class="col-md-10">
+                            <input name="MoTa" required type="text" />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="control-label col-md-2">Hình Ảnh</div>
+                        <div class="col-md-10">
+                            <input class="form-control" type="file" name="HinhAnh" id="formFile" accept="image/png, image/jpeg" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="control-label col-md-2">Số Lượng Tồn Kho</div>
+                        <div class="col-md-10">
+                            <input type="number" name="SoLuongTonKho" min="0" required />
+
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-md-offset-2 col-md-10">
+                            <input type="submit" value="Thêm" class="btn btn-default" />
+                        </div>
+                    </div>
+                </div>
+            }
+
+
+        </div>
+    </div>
+
+</div>

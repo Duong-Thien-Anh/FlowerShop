@@ -1,0 +1,111 @@
+﻿/*----------------------------------------------------------------------*/
+/*Thiết lập cho menu loại hoa */
+.danhmucLH {
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    background-color: white;
+    text-align: left;
+    font-size: 15pt;
+    color: black;
+    align-items: center;
+    justify-content: center;
+    display:flex;
+}
+.danhmucLH a{
+    color:black;
+    text-decoration: none;
+}
+.danhmucLH a:hover{
+    color:red;
+}
+.danhmucmini {
+    width: 100%;
+    height: 50px;
+}
+.danhmucmini a{
+    color:white;
+    text-decoration:none;
+    font-size: 15pt;
+    /*text-align: left;
+    align-items:center;
+    justify-content:center;
+    display:flex;
+    height: 50px;*/ /* Điều chỉnh chiều cao theo mong muốn */
+    /*line-height: 1;*/ /* Đảm bảo line-height bằng 1 để căn đều chữ theo chiều dọc */
+}
+.menu-loaihoa {
+    height: auto;
+    width: 100%;
+
+}
+.menu-child-loaihoa {
+    height: auto;
+    width: 100%;
+    margin-top: 0;
+}
+/*----------------------------------------------------------------------*/
+/*Thiết lập cho trang Products*/
+.background-products {
+    width: 100%;
+    height: auto;
+}
+.CHUDE {
+  width: 100%;
+  height:40px;
+  background-color:white;
+  color: black;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+.Product-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex: 1;
+}
+.Product-card {
+    height: auto;
+    width: 100%;
+    flex: 0 0 auto;
+    margin: 0 2% 2% 0;
+}
+
+.custom-color1 {
+    background-color: blue;
+}
+.custom-color2 {
+    background-color: yellow;
+}
+.img-anhSP {
+    height: 200px;
+    width: 200px;
+    position: relative; /* Để có thể sử dụng position:absolute cho hình ảnh */
+    overflow: hidden; /* Ẩn nội dung tràn ra khỏi div */
+    display: flex; /* Sử dụng flexbox */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    justify-content: center;
+}
+.card-img-top {
+    width: 100%; /* Kích thước của ảnh đầy đủ chiều rộng của div cha */
+    height: 100%; /* Kích thước của ảnh đầy đủ chiều cao của div cha */
+    object-fit: cover; /* Hiển thị phần chính diện của ảnh và giữ nguyên tỷ lệ khung */
+    object-position: center; /* Canh giữa ảnh trong div */
+    top: 0;
+    left: 0;
+}
+.card {
+    width: 201.5px;
+    height: 380px;
+    font-size: 8pt;
+    border-radius: 10px;
+    display: inline-block;
+    box-sizing: border-box;
+    cursor: pointer;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+.card:hover{
+    transform: translateY(-10px);
+}

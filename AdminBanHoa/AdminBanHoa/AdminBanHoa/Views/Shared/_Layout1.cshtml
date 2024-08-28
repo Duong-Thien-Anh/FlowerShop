@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="@Url.Content("/Content/css/ready.css")">
+    <link rel="stylesheet" href="@Url.Content("/Content/css/demo.css")">
+    <link rel="stylesheet" href="~/Content/css/layoutmain.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script src="@Url.Content("/Content/js/Ajax.js")"></script>
+
+    <title>@Page.Title</title>
+    @RenderSection("head", required: false)
+</head>
+<body>
+    <div class="wrapper">
+        <div class="main-header" style="height:50px">
+            <div class="logo-header">
+                <a href="#" class="logo">
+                   TheFlower
+                </a>
+                <button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse" data-target="collapse" aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <button class="topbar-toggler more"><i class="la la-ellipsis-v"></i></button>
+            </div>
+        </div>
+
+        <div class="sidebar">
+         
+            <div class="scrollbar-inner sidebar-wrapper">
+
+                <ul class="nav">
+                    <li class="nav-item">
+                        @Html.Action("SanPhamPartial", "SanPham")
+                    </li>
+                    <li class="nav-item">
+                        @Html.Action("LoaiSanPhamPartial", "LoaiSanPham")
+                    </li>
+                    <li class="nav-item">
+                        @Html.Action("KhachHangPartial", "KhachHang")
+                    </li>
+                    <li class="nav-item">
+                        @Html.Action("DonHangPartial", "DonHang")
+                    </li>
+                </ul>
+            </div>
+        </div>
+      
+        <div class="main-panel">
+            <div class="content">
+                <div style="height:10px"></div>
+                <div class="container-fluid">
+                    <h4 class="page-title">@RenderBody()</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+</html>

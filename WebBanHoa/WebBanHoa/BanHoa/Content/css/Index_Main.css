@@ -1,0 +1,180 @@
+﻿/*----------------------------------------------------------------------*/
+/*thiết lập cho trang index*/
+.body-background {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    /* background: url(img/BackgroundWebBanHoa.jpg) no-repeat; */
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+}
+/* Thiết lập phần hình ảnh chính - giới thiệu */
+/*Điều chỉnh phần nội dung bên trái*/
+.title-circle-mini {
+    text-align: left;
+    padding-bottom: 15%;
+    color: white;
+}
+
+.text-circle-mini {
+    font-size: 15pt;
+    padding-left: 2%;
+}
+
+.col h1 {
+    text-align: left;
+}
+
+.text-content-left {
+    text-align: left;
+    padding-top: 15%;
+}
+
+.row {
+    display: flex;
+    height: 90%;
+    align-items: center;
+}
+
+.col {
+    color: white;
+    flex-basis: 50%;
+}
+/*Điều chỉnh phần nội dung giữa*/
+.content-video {
+    width: 540px;
+    height: 360px;
+}
+
+.video-button {
+    padding-top: 5%;
+}
+
+.rounded-button {
+    width: 200px;
+    height: 50px;
+    background-color: transparent;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    font-size: 16px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+    .rounded-button a {
+        text-decoration: none;
+        color: white
+    }
+
+    .rounded-button:hover {
+        background-color: white;
+        color: black;
+    }
+/*Điều chỉnh nội dung bên phải*/
+.text-content-right {
+    padding-top: 5%;
+    text-align: center;
+}
+/* Thiết lập phần hình ảnh bản đồ Việt Nam  */
+.Main-Content-Area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 100vh;
+    width: auto;
+}
+
+.Main-Content-Child {
+    width: auto;
+    height: 100vh;
+    display: flex;
+    background-size: cover;
+    background-color: black;
+}
+
+.main-text {
+    /*    width: 60%;*/
+    background-color: none;
+    /*    float: left;*/
+    color: black;
+    margin-left: 100px;
+    margin-bottom: 50vh;
+}
+
+.color-main-text {
+    color: red;
+}
+
+.main-img {
+    width: 40%;
+    height: 800px;
+    background-color: none;
+    margin-left: 200px;
+}
+
+.img-VNmap {
+    max-width: 100%; /* Giới hạn kích thước tối đa của hình ảnh */
+    max-height: 100%; /* Giới hạn chiều cao tối đa của hình ảnh */
+    height: auto; /* Đảm bảo tỷ lệ khung hình bảo toàn */
+    width: auto; /* Đảm bảo tỷ lệ khung hình bảo toàn */
+}
+/* Thiết lập Phần 4 card  */
+.Main-content-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: auto;
+    background-color: black;
+}
+
+.Main-card-right {
+    display: flex;
+    padding-right: 0%;
+    padding-left: 10%;
+}
+
+.Main-content-card-right {
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+
+.card1 {
+    background-image: url(../img/Card-1.jpg);
+}
+
+.card2 {
+    background-image: url(../img/Card-2.jpg);
+}
+
+.card3 {
+    background-image: url(../img/Card-3.jpg);
+}
+
+.card4 {
+    background-image: url(../img/Card-4.jpg);
+}
+
+.card1::after {
+    position: absolute;
+    background-color: rgba(0,0,0,0.567);
+}
+
+.Main-content-card-right:hover {
+    transform: translateY(-10px);
+}

@@ -1,0 +1,32 @@
+﻿@model AdminBanHoa.Models.LoaiSanPham
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_Layout1.cshtml";
+}
+
+<h2>Xoá</h2>
+
+<h3>Bạn có chắc muốn xoá sản phẩm?</h3>
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Tên Loại Sản Phẩm
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TenLoaiSP)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

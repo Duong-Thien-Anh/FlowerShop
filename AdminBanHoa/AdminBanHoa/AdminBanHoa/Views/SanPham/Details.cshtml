@@ -1,0 +1,105 @@
+﻿@model AdminBanHoa.Models.SanPham
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout1.cshtml";
+}
+
+<h1>CHI TIẾT HOA</h1>
+<p style="padding-left:20px;padding-top:20px;">
+    @Html.ActionLink("Quay lại ", "Index", null, new { @class = "btn btn-primary" })
+    @Html.ActionLink("Sửa", "Edit", new { id = Model.MaSP }, new { @class = "btn btn-primary" })
+
+</p>
+<div class="background-dsdonhang">
+    <div class="content1">
+        <div class="dsdonhang">
+            <div>
+                <dl class="dl-horizontal">
+                    <dt>
+                        Mã Sản Phẩm
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.MaSP)
+                    </dd>
+
+                    <dt>
+                        Tên Loại Sản Phẩm
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.LoaiSanPham.TenLoaiSP)
+                    </dd>
+
+                    <dt>
+                        Tên Nhà Cung Cấp
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.TenNCC)
+                    </dd>
+
+                    <dt>
+                        Tên Sản Phẩm
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.TenSP)
+                    </dd>
+
+                    <dt>
+                        Màu Sắc
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.MauSP)
+                    </dd>
+
+                    <dt>
+                        Giá
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Gia).000 VND
+                    </dd>
+
+                    <dt>
+                        Mô Tả
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.MoTa)
+                    </dd>
+
+                    <dt>
+                        Hình Ảnh
+                    </dt>
+
+                    <dd>
+                        <img style="width:300px" src="@Url.Content("/Content/img/"+Model.HinhAnh)"/>
+                    </dd>
+
+                    <dt>
+                        Số Lượng Tồn Kho
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.SoLuongTonKho)
+                    </dd>
+
+                    <dt>
+                        Tình Trạng
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.TinhTrang)
+                    </dd>
+
+                </dl>
+            </div>
+
+        </div>
+    </div>
+
+</div>

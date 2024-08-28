@@ -1,0 +1,171 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <!--đây là phần css của web  -->
+    <link href="~/Content/css/BanHoa.css" rel="stylesheet" />
+    <link href="~/Content/css/SanPham.css" rel="stylesheet" />
+    <link href="~/Content/css/User.css" rel="stylesheet" />
+    <link href="~/Content/css/login_register.css" rel="stylesheet" />
+    <link href="~/Content/css/Index_Main.css" rel="stylesheet" />
+    <link href="~/Content/css/chitietsp.css" rel="stylesheet" />
+    <link href="~/Content/css/GioHang.css" rel="stylesheet" />
+    <link href="~/Content/css/dsdonhang.css" rel="stylesheet" />
+    <link href="~/Content/css/GioiThieu.css" rel="stylesheet" />
+    <!--đây là phần js của web  -->
+    <script src="~/Content/js/BanHoa.js"></script>
+    <script src="~/Content/js/SanPham.js"></script>
+    <script src="~/Content/js/User.js"></script>
+    <!--đây là phần css và js của animation  -->
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- đây là phần lấy nguồn để có icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script type="module" src=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!--Chatbot thông minh-->
+    <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+    <script src="https://mediafiles.botpress.cloud/e990a909-1501-45d2-8603-37e4439174fd/webchat/config.js" defer></script>
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <header>
+        <div class="logo" onclick="location.href='@Url.Action("Index", "Home")'"><<img src="~/Content/img/flower-logo.png" class="img-logo"></div>
+        <nav class="navigations">
+            @Html.ActionLink("Trang chủ", "Index", "Home")
+            @Html.ActionLink("Sản phẩm", "Products", "Product")
+            @*@Html.ActionLink("Hỗ trợ", "TroThanhDoiTac", "Home")*@
+
+        </nav>
+        <div class="feature">
+            <div class="box-search">
+                <input type="text" name="search" class="search" placeholder="Tìm kiếm...">
+                <a>
+                    <i class="fas fa-search"></i>
+                </a>
+
+            </div>
+            @Html.Action("CartPartial", "Cart")
+            <div class="user-login" onclick="location.href='@Url.Action("LogInAndRegister", "User")'">
+                <ion-icon name="person-circle-outline"></ion-icon>
+            </div>
+        </div>
+    </header>
+    <div class="render-body">
+        @RenderBody()
+    </div>
+    <!--footer-->
+    <footer class="text-center text-lg-start text-white"
+            style="background-color: #1c2331">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-between p-4"
+                 style="background-color: #6351ce">
+            <!-- Left -->
+            <div class="me-5">
+                <span>Kết nối với chúng tôi</span>
+            </div>
+            <!-- Left -->
+            <!-- Right -->
+            <div>
+                <a href="#" class="text-white me-4">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="text-white me-4">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="text-white me-4">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="#" class="text-white me-4">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="text-white me-4">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="#" class="text-white me-4">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+        <!-- Section: Links  -->
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold">Tiệm Hoa The Flower</h6>
+                        <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                            style="width: 60px; background-color: #7c4dff; height: 2px" />
+                        <p>
+                            Chuyên cung cấp các loại hoa phù hợp cho nhiều nhu cầu
+                        </p>
+                        <p>
+                            Phù hợp với nhiều đối tượng
+                        </p>
+                        <p>
+                            Giá cả hợp lí
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold">Useful links</h6>
+                        <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                            style="width: 60px; background-color: #7c4dff; height: 2px" />
+                        <p>
+                            @Html.ActionLink("Home", "Index", "Home", null, new { @class = "text-white" })
+                        </p>
+                        <p>
+                            @Html.ActionLink("About Us", "About", "Home", null, new { @class = "text-white" })
+                        </p>
+                        <p>
+                            @Html.ActionLink("Services", "Index", "Home", null, new { @class = "text-white" })
+                        </p>
+                        <p>
+                            @Html.ActionLink("Products", "Index", "Home", null, new { @class = "text-white" })
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold">Liên hệ</h6>
+                        <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                            style="width: 60px; background-color: #7c4dff; height: 2px" />
+                        <p><i class="fas fa-home mr-3"></i> 91/1 Nguyễn Hữu Cảnh, Phường 22, Quận Bình Thạnh, TP. HCM</p>
+                        <p><i class="fas fa-envelope mr-3"></i> <a href="mailto:tiemhoatheflower@gmail.com">tiemhoatheflower@gmail.com</a></p>
+                        <p><i class="fas fa-phone mr-3"></i> + 84 0375 105 041</p>
+                        <p><i class="fas fa-print mr-3"></i> + 84 0375 106 042</p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+        <!-- Copyright -->
+        <div class="text-center p-3"
+             style="background-color: rgba(0, 0, 0, 0.2)">
+            © 2023 Copyright:
+            @Html.ActionLink("The Flower", "Index", "Home", null, new { @class = "text-white" })
+
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+    <!-- ------------------------------- -->
+</body>
+
+
+</html>

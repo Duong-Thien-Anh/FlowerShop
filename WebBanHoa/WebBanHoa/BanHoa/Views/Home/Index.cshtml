@@ -1,0 +1,172 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+<!-- ------------------------------- -->
+<!-- đây là phần để tạo trang đăng kí và đăng nhập  -->
+<!-- ------------------------------- -->
+<!-- Main chính chứa nội dung của trang chính   -->
+<div class="body-background">
+
+        <div class="content text-center">
+            <div class="container">
+                <div class="row">
+                    <!--Content-left nằm ở bên trái-->
+                    <div class="col">
+                        <div class="title-circle-mini">
+                            <i class="fa-solid fa-circle"></i>
+                            <span class="text-circle-mini"> Thông tin  </span>
+                        </div>
+
+                        <h1>THE FLOWER</h1>
+                        <div class="text-content-left">
+                            Một bông hoa đẹp là một kiệt tác của thiên nhiên, một sự sáng tạo tinh tế và quyến rũ, mê hoặc các giác quan của chúng ta bằng màu sắc rực rỡ, những cánh hoa duyên dáng và hương thơm ngọt ngào. Thiết kế phức tạp và tính đối xứng hài hòa của nó nhắc nhở chúng ta về những kỳ quan của thế giới tự nhiên, truyền cảm hứng vui vẻ và thanh thản. Mỗi bông hoa, cho dù đó là một bông hồng mượt mà, một bông hoa hướng dương vui tươi hay một bông phong lan tinh tế, đều mang trong mình nét quyến rũ riêng, tạo thêm nét sang trọng cho thế giới xung quanh chúng ta. Vẻ đẹp dưới hình thức một bông hoa là lời nhắc nhở vượt thời gian về những điều kỳ diệu đơn giản nhưng sâu sắc tồn tại trong cuộc sống hàng ngày của chúng ta.
+                        </div>
+
+                    </div>
+
+                    <!--video nằm ở giữa-->
+                    <div class="col">
+                        <div>
+                            <video class="content-video" loop muted autoplay>
+                                <source src="@Url.Content("/Content/video/Untitled video - Made with Clipchamp.mp4")" type="video/mp4">
+                            </video>
+                        </div>
+
+                        <div class="video-button">
+                            <button type="button" class="rounded-button" id="introButton"><b>Giới thiệu</b></button>
+                          
+                        </div>
+
+                    </div>
+
+                    <!--Content-right slide nằm ở bên phải phía trên-->
+                    <div class="col">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="@Url.Content("/Content/img/Slideshow-1.jpg")" class="d-block w-100" alt="...">
+                                    
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="@Url.Content("/Content/img/Slideshow-5.jpg")" class="d-block w-100" alt="...">
+                                    
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="@Url.Content("/Content/img/Slideshow-3.jpg")" class="d-block w-100" alt="...">
+                                    
+                                </div>
+
+                            </div>
+
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+
+                        <!-- text right chữ nằm ở bên phải phía dưới-->
+                        <div class="text-right">
+                            <h1>SỰ CẦN THIẾT TỪ NHỮNG BÔNG HOA ?</h1>
+                            <div class="text-content-right">
+                                Hoa đơn thuần không chỉ là 1 loại thực vật tượng trưng cho sự nhẹ nhàng của cái đẹp.
+                                <p>Hoa thể hiện cảm xúc từ hạnh phúc đến nỗi buồn </p>
+                                <p>Đôi khi cũng là 1 món quà hoặc 1 vật trang trí giúp tâm hồn ta thoải mái hơn</p>
+                                <p>Vật tạo ra liên kết với xã hội , giúp con người cảm thấy gần và chia sẻ cùng nhau trong dịp đặc biệt </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+    </div>
+
+    <!-- ------------------------------- -->
+    <!-- Main Content Area chứa nội dung và bản đồ Việt Nam -->
+    <div class="Main-Content-Area">
+        <div class="row">
+            <div class="col">
+                <div class="main-text">
+                    <h3><span class="color-main-text">Vận chuyển 63 tỉnh thành trên Việt Nam</span></h3>
+                    <p>
+                        The Folwer cảm ơn các bạn đã tin tưởng và đồng hành cùng chúng tôi trong suốt thời gian qua. The Flower nhận giao hoa trên toàn quốc. Bạn có thể đặt hàng trực tuyến hoặc chat với chúng tôi qua kênh mạng xã hội khác hoặc khung chat góc phải website để được tư vấn cụ thể hơn.
+                        Đánh giá cao và cảm ơn!
+                    </p>
+                </div>
+            </div>
+            
+            <div class="col">
+                <div class="main-img">
+                    <img src="@Url.Content("/Content/img/VietNam-map.png")" alt="Bản đồ Việt Nam" class="img-VNmap">
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- ------------------------------- -->
+    <!-- 4 card rời và nội dung -->
+    <!-- đây là phần nội dung  -->
+    <div class="Main-content-card">
+        <div class="row">
+            <div class="col">
+                <h1>Một số sản phẩm nổi bật</h1>
+                <p>Sản phẩm hoa cho nhiều dịp khác nhau</p>
+            </div>
+
+            <!-- Đây là phần card -->
+            <div class="col">
+                <div class="Main-card-right">
+                    <div class="Main-content-card-right card1" onclick="redirectToDetailsPage('LSP003')">
+                        <h5>Quà tặng</h5>
+                    </div>
+
+                    <div class="Main-content-card-right card2" onclick="redirectToDetailsPage('LSP001')">
+                        <h5>Hoa cưới </h5>
+                    </div>
+
+                    <div class="Main-content-card-right card3" onclick="redirectToDetailsPage('LSP004')">
+                        <h5>Sinh nhật</h5>
+                    </div>
+
+                    <div class="Main-content-card-right card4" onclick="redirectToDetailsPage('LSP002')">
+                        <h5>Người đặc biệt</h5>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<script>
+    function redirectToDetailsPage(id) {
+        // Thực hiện chuyển hướng đến trang chi tiết khi click vào card
+        window.location.href = '@Url.Action("LoaiHoaTheoMa", "LoaiHoa")?MaLH=' + id;
+    }
+    document.getElementById('introButton').addEventListener('click', function() {
+        window.location.href = '@Url.Action("AboutUs", "Home")';
+    });
+</script>
+

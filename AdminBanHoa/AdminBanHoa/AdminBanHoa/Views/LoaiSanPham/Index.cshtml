@@ -1,0 +1,78 @@
+﻿@model IEnumerable<AdminBanHoa.Models.LoaiSanPham>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout1.cshtml";
+}
+<div class="tieude">
+    <h1 style="text-align:center">DANH SÁCH CÁC LOẠI SẢN PHẨM</h1>
+</div>
+<p style="padding-left:20px;padding-top:20px;">
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Thêm Loại Mới</button>
+</p>
+@if (Session["DeleteError"] != null)
+{
+    <p class="text-danger">@Session["DeleteError"]</p>
+    Session["DeleteError"] = null;
+}
+<div class="background-dsdonhang">
+    <div class="content1">
+        <div class="dsdonhang">
+            <table class="table">
+                <tr>
+                    <th>
+                        Mã Loại
+                    </th>
+                    <th>
+                        Tên Loại
+                    </th>
+                    <th></th>
+                </tr>
+
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.MaLoaiSP)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.TenLoaiSP)
+                        </td>
+                        <td>
+                            @Html.ActionLink("Sửa", "Edit", new { id = item.MaLoaiSP }, new { @class = "btn btn-primary" }) 
+                            @Html.ActionLink("Xóa", "Delete", new { id = item.MaLoaiSP }, new { @class = "btn btn-primary" })
+                        </td>
+                    </tr>
+                }
+
+            </table>
+
+            <div class="modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header"><h4 class="modal-title">Thêm</h4></div>
+                        <div class="modal-body">
+                            <form method="post">
+                                <div class="form-group">
+                                    <label for="MaLoaiSP">Mã Loại Sản Phẩm</label>
+                                    <input type="text" class="form-control" id="MaLoaiSP" placeholder="Mã" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="TenLoaiSP">Tên Loại Sản Phẩm</label>
+                                    <input type="text" class="form-control" id="TenLoaiSP" placeholder="Tên" />
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" id="btnAdd" onclick="return AddLoaiSP();">Thêm</button>
+                            <button type="button" class="btn btn-primary" id="btnUpdate" style="display:none" onclick="return UpdateSanPham();">Update</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Đóng</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,114 @@
+﻿@model AdminBanHoa.Models.SanPham
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/_Layout1.cshtml";
+}
+<p style="padding-left:30px;padding-top:20px;">
+    <h2>Chỉnh Sửa</h2>
+</p>
+<div>
+    @Html.ActionLink("Quay lại", "Index", null, new { @class = "btn btn-primary" })
+</div>
+<div class="background-dsdonhang">
+    <div class="content1">
+        <div class="dsdonhang">
+            @using (Html.BeginForm("Edit", "SanPham", System.Web.Mvc.FormMethod.Post, new { enctype = "multipart/form-data" }))
+            {
+                @Html.AntiForgeryToken()
+
+                <div class="form-horizontal">
+                    <h4 style="text-align: center; display: flex; align-items: center; justify-content: center; ">Sản phẩm</h4>
+                    <hr />
+                    @Html.ValidationSummary(true)
+                    @Html.HiddenFor(model => model.MaSP)
+
+                    <div class="form-group">
+                        <div class="control-label col-md-2">Tên Loại Sản Phẩm</div>
+                        <div class="col-md-10">
+                            @*@Html.EditorFor(model => model.MaLoaiSP)
+                                @Html.ValidationMessageFor(model => model.MaLoaiSP)*@
+                            @Html.DropDownList("TenLoaiSP", new SelectList(ViewBag.data, "MaLoaiSP", "TenLoaiSP"))
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="control-label col-md-2">Tên Nhà Cung Cấp</div>
+                        <div class="col-md-10">
+                            <input value="@Model.TenNCC" name="TenNCC" required type="text" />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="control-label col-md-2">Tên Sản Phẩm</div>
+                        <div class="col-md-10">
+                            <input value="@Model.TenSP" name="TenSP" required type="text" />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="control-label col-md-2">Màu Sắc</div>
+                        <div class="col-md-10">
+                            <input value="@Model.MauSP" name="MauSP" required type="text" />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="control-label col-md-2">Giá</div>
+                        <div class="col-md-10">
+                            <input type="number" name="Gia" min="1" required value="@Model.Gia" />
+
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="control-label col-md-2">Mô Tả</div>
+                        <div class="col-md-10">
+                            
+                            <input value="@Model.MoTa" name="MoTa" required type="text" />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="control-label col-md-2">Hình Ảnh</div>
+                        <div class="col-md-10">
+                            <input class="form-control" type="file" name="HinhAnh" id="formFile" accept="image/png, image/jpeg">
+
+
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="control-label col-md-2">Số Lượng Tồn Kho</div>
+                        <div class="col-md-10">
+                            <input type="number" name="SoLuongTonKho" required min="0" value="@Model.SoLuongTonKho" />
+
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="control-label col-md-2">Tình Trạng</div>
+                        <div class="col-md-10">
+                            <input value="@Model.TinhTrang" disabled="disabled" />
+
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-md-offset-2 col-md-10">
+                            <input type="submit" value="Lưu" class="btn btn-default" />
+                        </div>
+                    </div>
+                </div>
+            }
+
+        </div>
+    </div>
+
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#TenLoaiSP").val('@Model.MaLoaiSP')
+    })
+</script>
+

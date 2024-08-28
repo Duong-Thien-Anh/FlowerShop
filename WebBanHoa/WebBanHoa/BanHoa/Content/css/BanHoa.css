@@ -1,0 +1,169 @@
+﻿/*Phần điều chỉnh chung (body , heaeder ,scrollbar ,footer)*/
+/*----------------------------------------------------------------------*/
+/*Điều chỉnh body*/
+body {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+
+}
+.render-body {
+/*    margin: auto;*/
+    width: 100%;
+    height: auto;
+    padding: 40px;
+    background-color: black; /*Đổi màu background renderbody*/
+        margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+/*Điều chỉnh scroll thêm nổi bật*/
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(#720979,#00d4ff);
+    border-radius: 20px;
+}
+/*Điều chỉnh thanh gạch ngang */
+.gachngang {
+    width: 100%;
+    height: 2px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.gachngang1 {
+    width: 90%;
+    height: 2px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto; /* Tự động căn giữa ngang */
+}
+/*----------------------------------------------------------------------*/
+/*Điều chỉnh header*/
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:120px;
+    padding: 10px 100px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+/*thiết lập logo */
+.img-logo{
+    width: 150px;
+    height: 100px;
+}
+/*thiết lập navbar*/
+.navigations a {
+    position: relative;
+    font-size: 1.1em;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+.navigations a::after {
+        width: 100%;
+        height: 3px;
+        left: 0;
+        bottom: -6px;
+        background: #fff;
+        border-radius: 5px;
+        content: '';
+        position: absolute;
+        transform: scaleX(0);
+        transition: transform .5s;
+        transform-origin: right;
+    }
+
+.navigations a:hover::after {
+        transform: scaleX(1);
+        transform-origin: left;
+}
+/*Thiết lập thanh tìm kiếm */
+.box-search {
+    height: 40px;
+    display: flex;
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-radius: 30px;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    float: left;
+}
+.box-search:hover input {
+        width: 400px;
+    }
+
+.box-search input {
+        width: 0;
+        border: none;
+        outline: none;
+        font-weight: 500;
+        transition: 0.5s;
+        background: transparent;
+}
+box-search a .fas {
+    color: #1daf;
+    font-size: 18px;
+}
+/*Thiết lập cart-shopping*/
+.cart-shopping {
+    height: 40px;
+    background-color: #fff;
+    border-radius: 30px;
+    display: flex;
+    cursor: pointer;
+    transition: color 0.3s ease; /* Hiệu ứng chuyển đổi màu trong 0.3 giây với chế độ dễ dàng */
+    padding: 10px 20px;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    float: right;
+}
+.cart-shopping:hover {
+    color: #249EFE; /* Màu sẽ thay đổi khi con trỏ được đưa vào */
+}
+/*Thiết lập user*/
+.user-login {
+    height: 40px;
+    background-color: #fff;
+    border-radius: 30px;
+    display: flex;
+    cursor: pointer;
+    transition: color 0.3s ease; /* Hiệu ứng chuyển đổi màu trong 0.3 giây với chế độ dễ dàng */
+    padding: 10px 20px;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    float: left;
+}
+.user-login:hover {
+    color: #249EFE; /* Màu sẽ thay đổi khi con trỏ được đưa vào */
+}
+
+/* Để tránh nội dung bị che khuất bởi navbar */
+.content {
+    padding: 120px 20px; 
+    height: 800px;
+    width: 100%;
+}
+/*----------------------------------------------------------------------*/
+/*thiết lập phần footer*/
+footer {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 420px;
+
+}
+

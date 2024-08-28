@@ -1,0 +1,70 @@
+﻿@model IEnumerable<BanHoa.Models.ChiTietDH>
+
+@{
+    ViewBag.Title = "HuyDonHang";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+
+<<div class="content">
+    <h1 style="text-align:center;color:white">Chi Tiết Đơn Hàng</h1>
+    <div class="dsdonhang">
+        <table class="table">
+            <tr>
+                <th>
+                    Mã Đơn Hàng
+                </th>
+                <th>
+                    Mã Sản Phẩm
+                </th>
+                <th>
+                    Tên Sản Phẩm
+                </th>
+                <th>
+                    Hình Ảnh
+                </th>
+                <th>
+                    Số Lượng
+                </th>
+                <th>
+                    Thành Tiền
+                </th>
+                <th></th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                using (Html.BeginForm("HuyDonHang", "Payment", new { id = item.MaDH }, FormMethod.Post))
+                {
+                    <tr class="spgh">
+
+                    <td>
+                        @Html.DisplayFor(modelItem => item.MaDH)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.MaSP)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TenSP)
+                    </td>
+                    <td>
+                        <img src="@Url.Content("/Content/img/" + item.HinhAnh)" style="width:200px" />
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.SL)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ThanhTien).000 VND
+                    </td>
+                    <td>
+                        @Html.ActionLink("Xem chi tiết sản phẩm", "Details", new { id = item.MaSP }, new { @class = "btn btn-primary" })
+                        <td><input type="submit" value="Huỷ Đơn Hàng" class="btn btn-danger" /></td>
+                    </td>
+                </tr>
+                }
+                     
+            }
+            
+        </table>
+        
+    </div>
+</div>

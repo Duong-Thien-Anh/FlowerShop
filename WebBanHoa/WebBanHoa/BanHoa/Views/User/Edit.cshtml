@@ -1,0 +1,124 @@
+﻿@model BanHoa.Models.KhachHang
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+
+<div style="height:120px;"></div>
+<div class="background-UserLogin1">
+    <div class="row align-items-start d-flex">
+        @if (Session["TenKH"] != null)
+        {
+            <div class="col-2">
+
+                <div class="menu-user1">
+                    <a onclick="location.href='@Url.Action("Index","User")'" href="#"><ion-icon name="person-outline"></ion-icon><span class="textmn-user">Tài Khoản</span></a>
+                    <a onclick="location.href='@Url.Action("DanhSachDonHang","Payment")'" href="#"><ion-icon name="clipboard-outline"></ion-icon><span class="textmn-user">Đơn Mua</span></a>
+                    <a onclick="location.href='@Url.Action("Logout","User")'" href="#"><ion-icon name="exit-outline"></ion-icon><span class="textmn-user">Đăng Xuất</span></a>
+                </div>
+
+            </div>
+
+            <div class="col">
+                <div class="inf-user1">
+                    <div class="inf-title">
+                        <div class="inf-titlemini">
+                            <h2> Hồ Sơ Của Tôi </h2>
+                            <p>Quản lý thông tin bảo mật người dùng</p>
+                        </div>
+
+                    </div>
+                    <div class="gachngang1" style="background-color: #CCCCCC ;text-align:center;align-items:center;"></div>
+
+                    <div class="inf-card">
+                        <div class="row">
+                            <div class="col">
+                                @using (Html.BeginForm())
+                                {
+                                    @Html.AntiForgeryToken()
+
+                                <div class="form-horizontal">
+                                    @Html.ValidationSummary(true)
+                                    @Html.HiddenFor(model => model.MaKH)
+                                    @*----------------------------------------------------------------------------*@
+                                    <label class="ttedit" style=" padding-left: 20px ;color: black">Họ và tên  : </label>
+                                    <div class="input2-box">
+                     
+                                        <input type="text" name="TenKH" minlength="3" maxlength="50" value="@Model.TenKH" required>
+                                   
+                                        @Html.ValidationMessageFor(m => m.TenKH, "", new { @class = "badge badge-danger" })
+                                    </div>
+
+                                    <label class="ttedit" style=" padding-left: 20px ;color: black">Email : </label>
+                                    <div class="input2-box">
+                            
+                                        <input type="email" name="Email" minlength="3" maxlength="50" value="@Model.Email" required>
+                                        @Html.ValidationMessageFor(m => m.Email, "", new { @class = "badge badge-danger" })
+                                    </div>
+
+                                    <label class="ttedit" style=" padding-left: 20px ;color: black">Địa Chỉ : </label>
+                                    <div class="input2-box">
+   
+                                        <input type="text" name="DiaChi" minlength="10" maxlength="50" value="@Model.DiaChi" required>
+                                 
+                                        @Html.ValidationMessageFor(m => m.DiaChi, "", new { @class = "badge badge-danger" })
+                                    </div>
+
+                                    <label class="ttedit" style=" padding-left: 20px ;color: black">Mật Khẩu : </label>
+                                    <div class="input2-box">
+                                        <input type="Password" id="MatKhau" name="MatKhau" minlength="8" maxlength="20" placeholder="Mật khẩu" value="@Model.MatKhau" required>
+                                        @Html.ValidationMessageFor(m => m.MatKhau, "", new { @class = "badge badge-danger" })
+                                        <img src="~/Content/img/eye-close.png" id="eyeicon" />
+                                    </div>
+                                    <div class="btn-luuUS">
+                                        <div class="col-md-offset-2 col-md-10">
+                                            <input type="submit" value="Lưu" class="btn btn-primary" />
+                                        </div>
+                                    </div>
+                                </div>
+                                }
+
+                            </div>
+
+                            <div class="col-4">
+                                <div class="inf-img-user">
+                                    <div class="inf-img-user2">
+                                        <div class="khunganh border-neon">
+                                            <img src="~/Content/img/Card-1.jpg" />
+                                        </div>
+                                    </div>
+                                    <p>Ảnh đại diện</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        }
+
+
+
+    </div>
+</div>
+<script>
+    let eyeicon = document.getElementById("eyeicon");
+    let password = document.getElementById("MatKhau");
+    let imagePath1 = "@Url.Content("~/Content/img/eye-open.png")";
+    let imagePath2 = "@Url.Content("~/Content/img/eye-close.png")"; 
+
+    eyeicon.onclick = function () {
+        if (password.type === "password") {
+            password.type = "text";
+            eyeicon.img
+            eyeicon.src = imagePath1;
+        } else {
+            password.type = "password";
+            eyeicon.src = imagePath2;
+        }
+    };
+</script>

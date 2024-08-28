@@ -1,0 +1,76 @@
+﻿@model IEnumerable<BanHoa.Models.DonHang>
+
+@{
+    ViewBag.Title = "DanhSachDonHang";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+<div style="height:100px;"></div>
+<div class="background-dsdonhang">
+    <div class="content1">
+        <h2 style="color:white;">Danh Sách Đơn Hàng</h2>
+        <div class="dsdonhang">
+            <table class="table">
+                <tr>
+                    <th>
+                        MÃ KH
+                    </th>
+                    <th>
+                        NGÀY ĐẶT HOA
+                    </th>
+                    <th>
+                        NGÀY GIAO HOA
+                    </th>
+                    <th>
+                        ĐỊA CHỈ GIAO HOA
+                    </th>
+                    <th>
+                        TÌNH TRẠNG ĐƠN HÀNG
+                    </th>
+                    <th>
+                        PHƯƠNG THỨC THANH TOÁN
+                    </th>
+                    <th></th>
+                </tr>
+
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.MaKH)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.NgayDatHoa)
+                        </td>
+                        <td>
+                            @if (item.NgayGiaoHoa == null)
+                            {
+                                <p>Sau 3 - 5 ngày</p>
+                            }
+                            else
+                            {
+                                @Html.DisplayFor(modelItem => item.NgayGiaoHoa)
+                            }
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.DiaChiGiaoHoa)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.TinhTrangDH)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.PhuongThucTT)
+                        </td>
+                        <td>
+                            @Html.ActionLink("Xem chi tiết", "DanhSachCTDonHang", new { id = item.MaDH }, new { @class = "btn btn-primary" })
+                            @if (item.TinhTrangDH == "Đang chờ xử lí")
+                            {
+                                @Html.ActionLink("Huỷ Đơn Hàng", "HuyDonHang", new { id = item.MaDH }, new { @class = "btn btn-primary" })
+                            }
+                        </td>
+                    </tr>
+                }
+            </table>
+        </div>
+    </div>
+    
+</div>

@@ -1,0 +1,82 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+}
+
+@using BanHoa.Models;
+@model List<SanPham>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Loaị hoa theo mã</title>
+</head>s
+<body>
+    <div style="height:90px"></div>
+    <div class="background-products">
+        <div class="row align-items-start d-flex">
+            <div class="col-2 ">
+                <div class="menu-loaihoa">
+                    <div class="menu-loaihoa">
+                        @Html.Action("LoaiHoaPartial", "LoaiHoa")
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="Product-card-container">
+                    <div class="Product-card">
+                        <div class="CHUDE" style=" text-align:center;">
+
+                            <h3>Tất cả danh mục sản phẩm </h3>
+                            <div style="height:10px;"></div>
+                        </div>
+                        @ViewBag.Loai
+                        @foreach (var item in Model)
+                        {
+
+                            @*--------------------------- HÀNG SẢN PHẨM ---------------------------*@
+
+                            <div justify-content-center" style="float: left; justify-content: center; align-items: center; padding-left: 2%; padding-bottom: 2%;">
+                                <div class="card" onclick="redirectToDetailsPage('@item.MaSP')">
+                                    <div class="img-anhSP">
+                                        <img src="@Url.Content("/Content/img/" + item.HinhAnh)" class="card-img-top" alt="...">
+                                    </div>
+
+                                    <div class="card-body">
+                                        @if (item.TenSP.Count() > 17)
+                                        {
+                                            <p class="card-title" style="color: black; font-size: 12pt;">@(item.TenSP.Substring(0, 17) + "...")</p>
+                                        }
+                                        else
+                                        {
+                                            <p class="card-title" style="color: black; font-size: 12pt;">@Html.DisplayFor(modelItem => item.TenSP)</p>
+                                        }
+                                        <p class="card-text" style="color: black;">
+                                            màu sắc : @Html.DisplayFor(modelItem => item.MauSP)
+                                        </p>
+                                        <h3 class="Gia" style="color: #EB2727; "><span style="text-decoration: underline; color: #EB2727; font-size: 15pt; vertical-align: super; ">đ</span>@Html.DisplayFor(modelItem => item.Gia).000</h3>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        }
+                    </div>
+
+                </div>
+            </div>
+
+          </div>
+    </div>
+
+</body>
+
+</html>
+<script>
+    function redirectToDetailsPage(id) {
+        // Thực hiện chuyển hướng đến trang chi tiết khi click vào card
+        window.location.href = '@Url.Action("Details", "Product")/' + id;
+    }
+</script>

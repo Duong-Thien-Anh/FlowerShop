@@ -1,0 +1,102 @@
+﻿@model IEnumerable<AdminBanHoa.Models.SanPham>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout1.cshtml";
+}
+<div class="tieude">
+    <h1 style="text-align:center">DANH SÁCH SẢN PHẨM</h1>
+</div>
+<p style="padding-left:20px;padding-top:20px;">
+    @Html.ActionLink("Thêm Sản Phẩm Mới", "Create", null, new { @class = "btn btn-primary" })
+</p>
+@if (Session["AddError"] != null)
+{
+    <p class="text-danger">@Session["AddError"]</p>
+    Session["AddError"] = null;
+}
+
+<div class="background-dsdonhang">
+    <div class="content1">
+        <div class="dsdonhang">
+            <table class="table">
+                <tr>
+                    <th>
+                        Mã Sản Phẩm
+                    </th>
+                    <th>
+                        Tên Sản Phẩm
+                    <th>
+                        Màu Sắc
+                    </th>
+                    <th>
+                        Giá
+                    </th>
+                    <th>
+                        Mô Tả
+                    </th>
+                    <th>
+                        Hình Ảnh
+                    </th>
+                    <th>
+                        Số Lượng Tồn Kho
+                    </th>
+                    <th>
+                        Tình Trạng
+                    </th>
+                    <th>
+                        Tên Nhà Cung Cấp
+                    </th>
+                    <th>
+                        Loại Sản Phẩm
+                    </th>
+                    <th></th>
+                </tr>
+
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.MaSP)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.TenSP)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.MauSP)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Gia)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.MoTa)
+                        </td>
+                        <td>
+                            <img style="width:50px;" src="@Url.Content("/Content/img/" + item.HinhAnh)" />
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.SoLuongTonKho)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.TinhTrang)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.TenNCC)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.LoaiSanPham.TenLoaiSP)
+                        </td>
+                        <td>
+                            @Html.ActionLink("Sửa", "Edit", new { id = item.MaSP }, new { @class = "btn btn-primary" })
+                        </td>
+                        <td>
+                            @Html.ActionLink("Chi tiết", "Details", new { id = item.MaSP }, new { @class = "btn btn-primary" })
+                        </td>
+                    </tr>
+                }
+
+            </table>
+        </div>
+    </div>
+
+</div>

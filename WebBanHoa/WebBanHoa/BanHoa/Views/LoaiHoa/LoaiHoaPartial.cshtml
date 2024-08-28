@@ -1,0 +1,33 @@
+﻿@model IEnumerable<BanHoa.Models.LoaiSanPham>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>LoaiHoaPartial</title>
+</head>
+<body>
+    <div class="danhmucLH">
+        <a href="@Url.Action("Products", "Product")">
+            Loại hoa
+        </a>
+
+    </div>
+    <div class="gachngang" style="background-color: #FFFFFF"></div>
+    @foreach (var item in Model)
+    {
+        <div class="danhmucmini">
+            <a href="@Url.Action("LoaiHoaTheoMa", new { MaLH = item.MaLoaiSP })">@Html.DisplayFor(modelItem => item.TenLoaiSP)</a>
+        </div>
+        <div style="height:2%;"></div>
+
+    }
+    <div class="gachngang" style="background-color: #FFFFFF"></div>
+
+</body>
+</html>

@@ -1,0 +1,107 @@
+﻿.background-AboutUs {
+    display: flex;
+    align-items: center; /* Căn giữa theo chiều dọc */
+    height: 100%; /* Sử dụng chiều cao 100% của body */
+}
+
+.card-aboutus {
+    margin: 0 auto; /* Margin trên và dưới là 0, margin trái và phải tự động căn giữa */
+}
+
+.card-boss {
+    width: 400px;
+    height: 500px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.img-boss {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    height: 300px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.img-boss-child {
+    /*    width: 400px;
+    height: 300px;*/
+    width: 200px; /* Đặt kích thước của hình tròn */
+    height: 200px;
+    overflow: hidden; /* Loại bỏ phần thừa của hình tròn */
+    border-radius: 50%; /* Làm tròn hình ảnh */
+    box-shadow: 0 0 0 4px white, /* Viền màu đỏ đậm */
+    0 0 0 10px rgb(36, 116, 229); /* Viền màu xanh đậm */
+}
+.khunganh1 {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.khunganh1 img{
+  width:80%;
+  height: 80%;
+  z-index: 1;
+  overflow: hidden;
+  border-radius:50%;
+}
+.ava {
+    width: 100%; /* Đảm bảo hình ảnh điền hết vào khung hình tròn */
+    display: block;  
+    height: auto;
+    z-index: 1;
+    overflow: hidden;
+    border-radius: 20%;
+}
+
+.card-boss-text {
+    width: 400px;
+    height: 200px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: none;
+    text-align: center;
+    color: black;
+}
+
+show-inf-child1 {
+    align-items: center; /* Căn giữa theo chiều ngang */
+    justify-content: center;
+    margin: auto;
+    padding-left: 20px;
+}
+
+.show-inf1 {
+    background-color: white;
+    width: 650px;
+    height: 550px;
+    border-radius: 15px;
+    position: relative;
+    border: 2px solid white;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    align-items: center; /* Căn giữa theo chiều ngang */
+    justify-content: center;
+    margin: auto;
+}
+
+.background-form-inf1 {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*background: rgba(255, 255, 255, 0.7);*/ /* Thêm một màu nền với độ trong suốt */
+    padding: 20px;
+    border-radius: 10px; /* Bo góc nếu bạn muốn */
+    box-sizing: border-box;
+    height: 400px;
+    align-items: center; /* Căn giữa theo chiều ngang */
+    justify-content: center;
+    margin: auto;
+}

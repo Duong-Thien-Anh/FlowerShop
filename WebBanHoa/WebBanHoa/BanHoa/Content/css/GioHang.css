@@ -1,0 +1,59 @@
+﻿.tieudeGH {
+    width:100%;
+    height:100%;
+    border-radius:10px;
+    background-color: white;
+    color: black;
+}
+.ketquagh {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    background-color: white;
+    text-align: center;
+    align-items: center;
+}
+.spgh td {
+    vertical-align: middle;
+}
+.spgh1 td {
+    vertical-align: middle;
+}
+
+.background-giohang {
+    width: 100%;
+    height: auto;
+}
+.giohang-container {
+
+}
+.giohang {
+
+    width: 100%;
+    height: auto;
+}
+.xoatall {
+   margin-right:auto;
+}
+/*-------------------------------------------*/
+.donhangthanhcong {
+    display: grid;
+    place-items: center;
+    height: 100vh; /* Đặt chiều cao của container, có thể thay đổi tùy ý */
+    text-align: center;
+    width: 100%;
+    height: 200px;
+    background-color: white;
+    border-radius: 10px;
+}
+.content123 {
+
+}
+.donhangempty {
+    text-align: center;
+    width: 100%;
+    height: 200px;
+    background-color: white;
+    border-radius: 10px;
+    vertical-align: middle;
+}

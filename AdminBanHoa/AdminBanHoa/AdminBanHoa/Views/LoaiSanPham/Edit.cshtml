@@ -1,0 +1,52 @@
+﻿@model AdminBanHoa.Models.LoaiSanPham
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/_Layout1.cshtml";
+}
+
+<h2>Chỉnh Sửa</h2>
+<p style="padding-left:20px;padding-top:20px;">
+    @Html.ActionLink("Back to List", "Index",null, new { @class = "btn btn-primary" })
+</p>
+<div class="background-dsdonhang">
+    <div class="content1">
+        <div class="dsdonhang">
+            @using (Html.BeginForm())
+            {
+                @Html.AntiForgeryToken()
+
+                <div class="form-horizontal">
+                    <h4>Loại Sản Phẩm </h4>
+                    <hr />
+                    @Html.ValidationSummary(true)
+                    @Html.HiddenFor(model => model.MaLoaiSP)
+
+                    <div class="form-group">
+                        <div class="control-label col-md-2">Mã Loại Sản Phẩm</div>
+                        <div class="col-md-10">
+                            <input type="text" disabled="disabled" value="@Model.MaLoaiSP" />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="control-label col-md-2">Tên Loại Sản Phẩm</div>
+                        <div class="col-md-10">
+                            <input type="text" value="@Model.TenLoaiSP" name="TenLoaiSP" required />
+
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-md-offset-2 col-md-10">
+                            <input type="submit" value="Lưu" class="btn btn-default" />
+                        </div>
+                    </div>
+                </div>
+            }
+
+
+        </div>
+    </div>
+
+</div>

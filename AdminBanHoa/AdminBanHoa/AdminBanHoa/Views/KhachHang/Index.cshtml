@@ -1,0 +1,59 @@
+﻿@model IEnumerable<AdminBanHoa.Models.KhachHang>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout1.cshtml";
+}
+<div class="tieude">
+    <h1 style="text-align:center">DANH SÁCH KHÁCH HÀNG</h1>
+</div>
+<div style="height:20px;"></div>
+<div class="background-dsdonhang">
+    <div class="content1">
+        <div class="dsdonhang">
+            <table class="table">
+                <tr>
+                    <th>
+                        Mã Khách Hàng
+                    </th>
+                    <th>
+                        Tên Khách Hàng
+                    </th>
+                    <th>
+                        Email
+                    </th>
+                    <th>
+                        Địa Chỉ
+                    </th>
+                    <th>
+                        Mật Khẩu
+                    </th>
+                </tr>
+
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.MaKH)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.TenKH)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Email)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.DiaChi)
+                        </td>
+                        <td>
+                            <input id="MK" type="text" disabled value="@item.MatKhau" />
+
+                        </td>
+                    </tr>
+                }
+
+            </table>
+        </div>
+    </div>
+
+</div>

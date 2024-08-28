@@ -1,0 +1,87 @@
+﻿@model BanHoa.Models.SanPham
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+
+<div style="height:130px"></div>
+<div class="background-chitietsp">
+    <div class="row ">
+        <div class="col-4 ">
+            <div class="imgCTSP">
+                <img class="imgSP" src="@Url.Content("/Content/img/" + Model.HinhAnh)" />
+            </div>
+
+        </div>
+
+        <div class="col">
+            <div class="inf-ctSP">
+                <h2>Thông Tin Sản Phẩm</h2>
+                <div class="gachngang" style="background-color: #CCCCCC;"></div>
+                <p class="ttctSP">
+                    @Html.DisplayFor(model => model.TenNCC)
+                </p>
+
+                <p class="ttctSP">
+                    <h2>@Html.DisplayFor(model => model.TenSP)</h2>
+                </p>
+                <p class="ttctSP1">
+                    <h1 style="color: #EB2727 ; font-size:30pt; "><span style="text-decoration: underline; color: #EB2727; font-size: 15pt; vertical-align: super; ">đ</span>@Html.DisplayFor(model => model.Gia).000</h1>
+                </p>
+                <table>
+                    <tr class="khoangcachttsp">
+                        <td>Màu sắc :</td>
+                        <td>
+
+                            @Html.DisplayFor(model => model.MauSP)
+
+                        </td>
+                    </tr>
+                    <tr></tr>
+                    <tr class="khoangcachttsp">
+                        <td>Mô tả :</td>
+                        <td>
+
+                            @Html.DisplayFor(model => model.MoTa)
+
+                        </td>
+                    </tr>
+                    <tr class="khoangcachttsp">
+                        <td>Số lượng hàng còn  :</td>
+                        <td>
+
+                            @Html.DisplayFor(model => model.SoLuongTonKho)
+
+                        </td>
+                    </tr>
+                    <tr class="khoangcachttsp">
+                        <td>Tình trạng :</td>
+                        <td>
+
+                            @Html.DisplayFor(model => model.TinhTrang)
+
+                        </td>
+                    </tr>
+                </table>
+
+
+
+
+                <div class="soluong">
+                    @using (Html.BeginForm("ThemGioHang", "Cart", new { mh = Model.MaSP, @strURL = Request.Url.ToString() }, FormMethod.Post))
+                    {
+                        <input type="number" min="1" value="1" name="SoLuong" max="@Model.SoLuongTonKho" />
+                        <input type="submit" value="Thêm vào giỏ hàng" class="btn btn-primary" />
+
+                    }
+                </div>
+               
+            </div>
+
+        </div>
+    </div>
+</div>
+
+    
+

@@ -1,0 +1,165 @@
+C:\Users\namdo\Desktop\AdminBanHoa\AdminBanHoa\bin\AdminBanHoa.dll.config
+C:\Users\namdo\Desktop\AdminBanHoa\AdminBanHoa\bin\AdminBanHoa.dll
+C:\Users\namdo\Desktop\AdminBanHoa\AdminBanHoa\bin\AdminBanHoa.pdb
+C:\Users\namdo\Desktop\AdminBanHoa\AdminBanHoa\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\namdo\Desktop\AdminBanHoa\AdminBanHoa\bin\Newtonsoft.Json.dll
+C:\Users\namdo\Desktop\AdminBanHoa\AdminBanHoa\bin\System.Net.Http.Formatting.dll
+C:\Users\namdo\Desktop\AdminBanHoa\AdminBanHoa\bin\System.Web.Helpers.dll
+C:\Users\namdo\Desktop\AdminBanHoa\AdminBanHoa\bin\System.Web.Http.dll
+C:\Users\namdo\Desktop\AdminBanHoa\AdminBanHoa\bin\System.Web.Http.WebHost.dll
+C:\Users\namdo\Desktop\AdminBanHoa\AdminBanHoa\bin\System.Web.Mvc.dll
+C:\Users\namdo\Desktop\AdminBanHoa\AdminBanHoa\bin\System.Web.Razor.dll
+C:\Users\namdo\Desktop\AdminBanHoa\AdminBanHoa\bin\System.Web.Webpages.Deployment.dll
+C:\Users\namdo\Desktop\AdminBanHoa\AdminBanHoa\bin\System.Web.Webpages.dll
+C:\Users\namdo\Desktop\AdminBanHoa\AdminBanHoa\bin\System.Web.Webpages.Razor.dll
+C:\Users\namdo\Desktop\AdminBanHoa\AdminBanHoa\bin\System.Web.Razor.xml
+C:\Users\namdo\Desktop\AdminBanHoa\AdminBanHoa\bin\System.Web.Webpages.xml
+C:\Users\namdo\Desktop\AdminBanHoa\AdminBanHoa\bin\System.Web.Webpages.Deployment.xml
+C:\Users\namdo\Desktop\AdminBanHoa\AdminBanHoa\bin\System.Web.Webpages.Razor.xml
+C:\Users\namdo\Desktop\AdminBanHoa\AdminBanHoa\bin\System.Web.Helpers.xml
+C:\Users\namdo\Desktop\AdminBanHoa\AdminBanHoa\bin\System.Web.Mvc.xml
+C:\Users\namdo\Desktop\AdminBanHoa\AdminBanHoa\bin\Newtonsoft.Json.xml
+C:\Users\namdo\Desktop\AdminBanHoa\AdminBanHoa\bin\System.Net.Http.Formatting.xml
+C:\Users\namdo\Desktop\AdminBanHoa\AdminBanHoa\bin\System.Web.Http.xml
+C:\Users\namdo\Desktop\AdminBanHoa\AdminBanHoa\bin\System.Web.Http.WebHost.xml
+C:\Users\namdo\Desktop\AdminBanHoa\AdminBanHoa\obj\Debug\AdminBanHoa.dll
+C:\Users\namdo\Desktop\AdminBanHoa\AdminBanHoa\obj\Debug\AdminBanHoa.pdb
+C:\Users\namdo\Desktop\AdminBanHoa\AdminBanHoa\obj\Debug\AdminBanHoa.csprojResolveAssemblyReference.cache
+C:\Users\namdo\Desktop\main\AdminBanHoa\AdminBanHoa\bin\AdminBanHoa.dll.config
+C:\Users\namdo\Desktop\main\AdminBanHoa\AdminBanHoa\bin\AdminBanHoa.dll
+C:\Users\namdo\Desktop\main\AdminBanHoa\AdminBanHoa\bin\AdminBanHoa.pdb
+C:\Users\namdo\Desktop\main\AdminBanHoa\AdminBanHoa\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\namdo\Desktop\main\AdminBanHoa\AdminBanHoa\bin\Newtonsoft.Json.dll
+C:\Users\namdo\Desktop\main\AdminBanHoa\AdminBanHoa\bin\System.Net.Http.Formatting.dll
+C:\Users\namdo\Desktop\main\AdminBanHoa\AdminBanHoa\bin\System.Web.Helpers.dll
+C:\Users\namdo\Desktop\main\AdminBanHoa\AdminBanHoa\bin\System.Web.Http.dll
+C:\Users\namdo\Desktop\main\AdminBanHoa\AdminBanHoa\bin\System.Web.Http.WebHost.dll
+C:\Users\namdo\Desktop\main\AdminBanHoa\AdminBanHoa\bin\System.Web.Mvc.dll
+C:\Users\namdo\Desktop\main\AdminBanHoa\AdminBanHoa\bin\System.Web.Razor.dll
+C:\Users\namdo\Desktop\main\AdminBanHoa\AdminBanHoa\bin\System.Web.Webpages.Deployment.dll
+C:\Users\namdo\Desktop\main\AdminBanHoa\AdminBanHoa\bin\System.Web.Webpages.dll
+C:\Users\namdo\Desktop\main\AdminBanHoa\AdminBanHoa\bin\System.Web.Webpages.Razor.dll
+C:\Users\namdo\Desktop\main\AdminBanHoa\AdminBanHoa\bin\System.Web.Razor.xml
+C:\Users\namdo\Desktop\main\AdminBanHoa\AdminBanHoa\bin\System.Web.Webpages.xml
+C:\Users\namdo\Desktop\main\AdminBanHoa\AdminBanHoa\bin\System.Web.Webpages.Deployment.xml
+C:\Users\namdo\Desktop\main\AdminBanHoa\AdminBanHoa\bin\System.Web.Webpages.Razor.xml
+C:\Users\namdo\Desktop\main\AdminBanHoa\AdminBanHoa\bin\System.Web.Helpers.xml
+C:\Users\namdo\Desktop\main\AdminBanHoa\AdminBanHoa\bin\System.Web.Mvc.xml
+C:\Users\namdo\Desktop\main\AdminBanHoa\AdminBanHoa\bin\Newtonsoft.Json.xml
+C:\Users\namdo\Desktop\main\AdminBanHoa\AdminBanHoa\bin\System.Net.Http.Formatting.xml
+C:\Users\namdo\Desktop\main\AdminBanHoa\AdminBanHoa\bin\System.Web.Http.xml
+C:\Users\namdo\Desktop\main\AdminBanHoa\AdminBanHoa\bin\System.Web.Http.WebHost.xml
+C:\Users\namdo\Desktop\main\AdminBanHoa\AdminBanHoa\obj\Debug\AdminBanHoa.csprojResolveAssemblyReference.cache
+C:\Users\namdo\Desktop\main\AdminBanHoa\AdminBanHoa\obj\Debug\AdminBanHoa.dll
+C:\Users\namdo\Desktop\main\AdminBanHoa\AdminBanHoa\obj\Debug\AdminBanHoa.pdb
+C:\Users\ngogi\Downloads\test web bán hoa\AdminBanHoa\AdminBanHoa\bin\AdminBanHoa.dll.config
+C:\Users\ngogi\Downloads\test web bán hoa\AdminBanHoa\AdminBanHoa\bin\AdminBanHoa.dll
+C:\Users\ngogi\Downloads\test web bán hoa\AdminBanHoa\AdminBanHoa\bin\AdminBanHoa.pdb
+C:\Users\ngogi\Downloads\test web bán hoa\AdminBanHoa\AdminBanHoa\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\ngogi\Downloads\test web bán hoa\AdminBanHoa\AdminBanHoa\bin\Newtonsoft.Json.dll
+C:\Users\ngogi\Downloads\test web bán hoa\AdminBanHoa\AdminBanHoa\bin\System.Net.Http.Formatting.dll
+C:\Users\ngogi\Downloads\test web bán hoa\AdminBanHoa\AdminBanHoa\bin\System.Web.Helpers.dll
+C:\Users\ngogi\Downloads\test web bán hoa\AdminBanHoa\AdminBanHoa\bin\System.Web.Http.dll
+C:\Users\ngogi\Downloads\test web bán hoa\AdminBanHoa\AdminBanHoa\bin\System.Web.Http.WebHost.dll
+C:\Users\ngogi\Downloads\test web bán hoa\AdminBanHoa\AdminBanHoa\bin\System.Web.Mvc.dll
+C:\Users\ngogi\Downloads\test web bán hoa\AdminBanHoa\AdminBanHoa\bin\System.Web.Razor.dll
+C:\Users\ngogi\Downloads\test web bán hoa\AdminBanHoa\AdminBanHoa\bin\System.Web.Webpages.Deployment.dll
+C:\Users\ngogi\Downloads\test web bán hoa\AdminBanHoa\AdminBanHoa\bin\System.Web.Webpages.dll
+C:\Users\ngogi\Downloads\test web bán hoa\AdminBanHoa\AdminBanHoa\bin\System.Web.Webpages.Razor.dll
+C:\Users\ngogi\Downloads\test web bán hoa\AdminBanHoa\AdminBanHoa\bin\System.Web.Razor.xml
+C:\Users\ngogi\Downloads\test web bán hoa\AdminBanHoa\AdminBanHoa\bin\System.Web.Webpages.xml
+C:\Users\ngogi\Downloads\test web bán hoa\AdminBanHoa\AdminBanHoa\bin\System.Web.Webpages.Deployment.xml
+C:\Users\ngogi\Downloads\test web bán hoa\AdminBanHoa\AdminBanHoa\bin\System.Web.Webpages.Razor.xml
+C:\Users\ngogi\Downloads\test web bán hoa\AdminBanHoa\AdminBanHoa\bin\System.Web.Helpers.xml
+C:\Users\ngogi\Downloads\test web bán hoa\AdminBanHoa\AdminBanHoa\bin\System.Web.Mvc.xml
+C:\Users\ngogi\Downloads\test web bán hoa\AdminBanHoa\AdminBanHoa\bin\Newtonsoft.Json.xml
+C:\Users\ngogi\Downloads\test web bán hoa\AdminBanHoa\AdminBanHoa\bin\System.Net.Http.Formatting.xml
+C:\Users\ngogi\Downloads\test web bán hoa\AdminBanHoa\AdminBanHoa\bin\System.Web.Http.xml
+C:\Users\ngogi\Downloads\test web bán hoa\AdminBanHoa\AdminBanHoa\bin\System.Web.Http.WebHost.xml
+C:\Users\ngogi\Downloads\test web bán hoa\AdminBanHoa\AdminBanHoa\obj\Debug\AdminBanHoa.csproj.AssemblyReference.cache
+C:\Users\ngogi\Downloads\test web bán hoa\AdminBanHoa\AdminBanHoa\obj\Debug\AdminBanHoa.csproj.CoreCompileInputs.cache
+C:\Users\ngogi\Downloads\test web bán hoa\AdminBanHoa\AdminBanHoa\obj\Debug\AdminBanHoa.csproj.CopyComplete
+C:\Users\ngogi\Downloads\test web bán hoa\AdminBanHoa\AdminBanHoa\obj\Debug\AdminBanHoa.dll
+C:\Users\ngogi\Downloads\test web bán hoa\AdminBanHoa\AdminBanHoa\obj\Debug\AdminBanHoa.pdb
+C:\Users\namdo\Desktop\Đồ án nhóm 6\Đồ án nhóm 6\AdminBanHoa\AdminBanHoa\bin\AdminBanHoa.dll.config
+C:\Users\namdo\Desktop\Đồ án nhóm 6\Đồ án nhóm 6\AdminBanHoa\AdminBanHoa\bin\AdminBanHoa.dll
+C:\Users\namdo\Desktop\Đồ án nhóm 6\Đồ án nhóm 6\AdminBanHoa\AdminBanHoa\bin\AdminBanHoa.pdb
+C:\Users\namdo\Desktop\Đồ án nhóm 6\Đồ án nhóm 6\AdminBanHoa\AdminBanHoa\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\namdo\Desktop\Đồ án nhóm 6\Đồ án nhóm 6\AdminBanHoa\AdminBanHoa\bin\Newtonsoft.Json.dll
+C:\Users\namdo\Desktop\Đồ án nhóm 6\Đồ án nhóm 6\AdminBanHoa\AdminBanHoa\bin\System.Net.Http.Formatting.dll
+C:\Users\namdo\Desktop\Đồ án nhóm 6\Đồ án nhóm 6\AdminBanHoa\AdminBanHoa\bin\System.Web.Helpers.dll
+C:\Users\namdo\Desktop\Đồ án nhóm 6\Đồ án nhóm 6\AdminBanHoa\AdminBanHoa\bin\System.Web.Http.dll
+C:\Users\namdo\Desktop\Đồ án nhóm 6\Đồ án nhóm 6\AdminBanHoa\AdminBanHoa\bin\System.Web.Http.WebHost.dll
+C:\Users\namdo\Desktop\Đồ án nhóm 6\Đồ án nhóm 6\AdminBanHoa\AdminBanHoa\bin\System.Web.Mvc.dll
+C:\Users\namdo\Desktop\Đồ án nhóm 6\Đồ án nhóm 6\AdminBanHoa\AdminBanHoa\bin\System.Web.Razor.dll
+C:\Users\namdo\Desktop\Đồ án nhóm 6\Đồ án nhóm 6\AdminBanHoa\AdminBanHoa\bin\System.Web.Webpages.Deployment.dll
+C:\Users\namdo\Desktop\Đồ án nhóm 6\Đồ án nhóm 6\AdminBanHoa\AdminBanHoa\bin\System.Web.Webpages.dll
+C:\Users\namdo\Desktop\Đồ án nhóm 6\Đồ án nhóm 6\AdminBanHoa\AdminBanHoa\bin\System.Web.Webpages.Razor.dll
+C:\Users\namdo\Desktop\Đồ án nhóm 6\Đồ án nhóm 6\AdminBanHoa\AdminBanHoa\bin\System.Web.Razor.xml
+C:\Users\namdo\Desktop\Đồ án nhóm 6\Đồ án nhóm 6\AdminBanHoa\AdminBanHoa\bin\System.Web.Webpages.xml
+C:\Users\namdo\Desktop\Đồ án nhóm 6\Đồ án nhóm 6\AdminBanHoa\AdminBanHoa\bin\System.Web.Webpages.Deployment.xml
+C:\Users\namdo\Desktop\Đồ án nhóm 6\Đồ án nhóm 6\AdminBanHoa\AdminBanHoa\bin\System.Web.Webpages.Razor.xml
+C:\Users\namdo\Desktop\Đồ án nhóm 6\Đồ án nhóm 6\AdminBanHoa\AdminBanHoa\bin\System.Web.Helpers.xml
+C:\Users\namdo\Desktop\Đồ án nhóm 6\Đồ án nhóm 6\AdminBanHoa\AdminBanHoa\bin\System.Web.Mvc.xml
+C:\Users\namdo\Desktop\Đồ án nhóm 6\Đồ án nhóm 6\AdminBanHoa\AdminBanHoa\bin\Newtonsoft.Json.xml
+C:\Users\namdo\Desktop\Đồ án nhóm 6\Đồ án nhóm 6\AdminBanHoa\AdminBanHoa\bin\System.Net.Http.Formatting.xml
+C:\Users\namdo\Desktop\Đồ án nhóm 6\Đồ án nhóm 6\AdminBanHoa\AdminBanHoa\bin\System.Web.Http.xml
+C:\Users\namdo\Desktop\Đồ án nhóm 6\Đồ án nhóm 6\AdminBanHoa\AdminBanHoa\bin\System.Web.Http.WebHost.xml
+C:\Users\namdo\Desktop\Đồ án nhóm 6\Đồ án nhóm 6\AdminBanHoa\AdminBanHoa\obj\Debug\AdminBanHoa.csprojResolveAssemblyReference.cache
+C:\Users\namdo\Desktop\Đồ án nhóm 6\Đồ án nhóm 6\AdminBanHoa\AdminBanHoa\obj\Debug\AdminBanHoa.dll
+C:\Users\namdo\Desktop\Đồ án nhóm 6\Đồ án nhóm 6\AdminBanHoa\AdminBanHoa\obj\Debug\AdminBanHoa.pdb
+C:\Users\namdo\Desktop\Study\Hk1 2023-2024\LapTrinhWeb\Đồ án nhóm 6\Đồ án nhóm 6\AdminBanHoa\AdminBanHoa\bin\AdminBanHoa.dll.config
+C:\Users\namdo\Desktop\Study\Hk1 2023-2024\LapTrinhWeb\Đồ án nhóm 6\Đồ án nhóm 6\AdminBanHoa\AdminBanHoa\bin\AdminBanHoa.dll
+C:\Users\namdo\Desktop\Study\Hk1 2023-2024\LapTrinhWeb\Đồ án nhóm 6\Đồ án nhóm 6\AdminBanHoa\AdminBanHoa\bin\AdminBanHoa.pdb
+C:\Users\namdo\Desktop\Study\Hk1 2023-2024\LapTrinhWeb\Đồ án nhóm 6\Đồ án nhóm 6\AdminBanHoa\AdminBanHoa\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\namdo\Desktop\Study\Hk1 2023-2024\LapTrinhWeb\Đồ án nhóm 6\Đồ án nhóm 6\AdminBanHoa\AdminBanHoa\bin\Newtonsoft.Json.dll
+C:\Users\namdo\Desktop\Study\Hk1 2023-2024\LapTrinhWeb\Đồ án nhóm 6\Đồ án nhóm 6\AdminBanHoa\AdminBanHoa\bin\System.Net.Http.Formatting.dll
+C:\Users\namdo\Desktop\Study\Hk1 2023-2024\LapTrinhWeb\Đồ án nhóm 6\Đồ án nhóm 6\AdminBanHoa\AdminBanHoa\bin\System.Web.Helpers.dll
+C:\Users\namdo\Desktop\Study\Hk1 2023-2024\LapTrinhWeb\Đồ án nhóm 6\Đồ án nhóm 6\AdminBanHoa\AdminBanHoa\bin\System.Web.Http.dll
+C:\Users\namdo\Desktop\Study\Hk1 2023-2024\LapTrinhWeb\Đồ án nhóm 6\Đồ án nhóm 6\AdminBanHoa\AdminBanHoa\bin\System.Web.Http.WebHost.dll
+C:\Users\namdo\Desktop\Study\Hk1 2023-2024\LapTrinhWeb\Đồ án nhóm 6\Đồ án nhóm 6\AdminBanHoa\AdminBanHoa\bin\System.Web.Mvc.dll
+C:\Users\namdo\Desktop\Study\Hk1 2023-2024\LapTrinhWeb\Đồ án nhóm 6\Đồ án nhóm 6\AdminBanHoa\AdminBanHoa\bin\System.Web.Razor.dll
+C:\Users\namdo\Desktop\Study\Hk1 2023-2024\LapTrinhWeb\Đồ án nhóm 6\Đồ án nhóm 6\AdminBanHoa\AdminBanHoa\bin\System.Web.Webpages.Deployment.dll
+C:\Users\namdo\Desktop\Study\Hk1 2023-2024\LapTrinhWeb\Đồ án nhóm 6\Đồ án nhóm 6\AdminBanHoa\AdminBanHoa\bin\System.Web.Webpages.dll
+C:\Users\namdo\Desktop\Study\Hk1 2023-2024\LapTrinhWeb\Đồ án nhóm 6\Đồ án nhóm 6\AdminBanHoa\AdminBanHoa\bin\System.Web.Webpages.Razor.dll
+C:\Users\namdo\Desktop\Study\Hk1 2023-2024\LapTrinhWeb\Đồ án nhóm 6\Đồ án nhóm 6\AdminBanHoa\AdminBanHoa\bin\System.Web.Razor.xml
+C:\Users\namdo\Desktop\Study\Hk1 2023-2024\LapTrinhWeb\Đồ án nhóm 6\Đồ án nhóm 6\AdminBanHoa\AdminBanHoa\bin\System.Web.Webpages.xml
+C:\Users\namdo\Desktop\Study\Hk1 2023-2024\LapTrinhWeb\Đồ án nhóm 6\Đồ án nhóm 6\AdminBanHoa\AdminBanHoa\bin\System.Web.Webpages.Deployment.xml
+C:\Users\namdo\Desktop\Study\Hk1 2023-2024\LapTrinhWeb\Đồ án nhóm 6\Đồ án nhóm 6\AdminBanHoa\AdminBanHoa\bin\System.Web.Webpages.Razor.xml
+C:\Users\namdo\Desktop\Study\Hk1 2023-2024\LapTrinhWeb\Đồ án nhóm 6\Đồ án nhóm 6\AdminBanHoa\AdminBanHoa\bin\System.Web.Helpers.xml
+C:\Users\namdo\Desktop\Study\Hk1 2023-2024\LapTrinhWeb\Đồ án nhóm 6\Đồ án nhóm 6\AdminBanHoa\AdminBanHoa\bin\System.Web.Mvc.xml
+C:\Users\namdo\Desktop\Study\Hk1 2023-2024\LapTrinhWeb\Đồ án nhóm 6\Đồ án nhóm 6\AdminBanHoa\AdminBanHoa\bin\Newtonsoft.Json.xml
+C:\Users\namdo\Desktop\Study\Hk1 2023-2024\LapTrinhWeb\Đồ án nhóm 6\Đồ án nhóm 6\AdminBanHoa\AdminBanHoa\bin\System.Net.Http.Formatting.xml
+C:\Users\namdo\Desktop\Study\Hk1 2023-2024\LapTrinhWeb\Đồ án nhóm 6\Đồ án nhóm 6\AdminBanHoa\AdminBanHoa\bin\System.Web.Http.xml
+C:\Users\namdo\Desktop\Study\Hk1 2023-2024\LapTrinhWeb\Đồ án nhóm 6\Đồ án nhóm 6\AdminBanHoa\AdminBanHoa\bin\System.Web.Http.WebHost.xml
+C:\Users\namdo\Desktop\Study\Hk1 2023-2024\LapTrinhWeb\Đồ án nhóm 6\Đồ án nhóm 6\AdminBanHoa\AdminBanHoa\obj\Debug\AdminBanHoa.dll
+C:\Users\namdo\Desktop\Study\Hk1 2023-2024\LapTrinhWeb\Đồ án nhóm 6\Đồ án nhóm 6\AdminBanHoa\AdminBanHoa\obj\Debug\AdminBanHoa.pdb
+C:\Users\ngogi\Downloads\Đồ án nhóm 6\AdminBanHoa\AdminBanHoa\AdminBanHoa\bin\AdminBanHoa.dll.config
+C:\Users\ngogi\Downloads\Đồ án nhóm 6\AdminBanHoa\AdminBanHoa\AdminBanHoa\bin\AdminBanHoa.dll
+C:\Users\ngogi\Downloads\Đồ án nhóm 6\AdminBanHoa\AdminBanHoa\AdminBanHoa\bin\AdminBanHoa.pdb
+C:\Users\ngogi\Downloads\Đồ án nhóm 6\AdminBanHoa\AdminBanHoa\AdminBanHoa\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\ngogi\Downloads\Đồ án nhóm 6\AdminBanHoa\AdminBanHoa\AdminBanHoa\bin\Newtonsoft.Json.dll
+C:\Users\ngogi\Downloads\Đồ án nhóm 6\AdminBanHoa\AdminBanHoa\AdminBanHoa\bin\System.Net.Http.Formatting.dll
+C:\Users\ngogi\Downloads\Đồ án nhóm 6\AdminBanHoa\AdminBanHoa\AdminBanHoa\bin\System.Web.Helpers.dll
+C:\Users\ngogi\Downloads\Đồ án nhóm 6\AdminBanHoa\AdminBanHoa\AdminBanHoa\bin\System.Web.Http.dll
+C:\Users\ngogi\Downloads\Đồ án nhóm 6\AdminBanHoa\AdminBanHoa\AdminBanHoa\bin\System.Web.Http.WebHost.dll
+C:\Users\ngogi\Downloads\Đồ án nhóm 6\AdminBanHoa\AdminBanHoa\AdminBanHoa\bin\System.Web.Mvc.dll
+C:\Users\ngogi\Downloads\Đồ án nhóm 6\AdminBanHoa\AdminBanHoa\AdminBanHoa\bin\System.Web.Razor.dll
+C:\Users\ngogi\Downloads\Đồ án nhóm 6\AdminBanHoa\AdminBanHoa\AdminBanHoa\bin\System.Web.Webpages.Deployment.dll
+C:\Users\ngogi\Downloads\Đồ án nhóm 6\AdminBanHoa\AdminBanHoa\AdminBanHoa\bin\System.Web.Webpages.dll
+C:\Users\ngogi\Downloads\Đồ án nhóm 6\AdminBanHoa\AdminBanHoa\AdminBanHoa\bin\System.Web.Webpages.Razor.dll
+C:\Users\ngogi\Downloads\Đồ án nhóm 6\AdminBanHoa\AdminBanHoa\AdminBanHoa\bin\System.Web.Razor.xml
+C:\Users\ngogi\Downloads\Đồ án nhóm 6\AdminBanHoa\AdminBanHoa\AdminBanHoa\bin\System.Web.Webpages.xml
+C:\Users\ngogi\Downloads\Đồ án nhóm 6\AdminBanHoa\AdminBanHoa\AdminBanHoa\bin\System.Web.Webpages.Deployment.xml
+C:\Users\ngogi\Downloads\Đồ án nhóm 6\AdminBanHoa\AdminBanHoa\AdminBanHoa\bin\System.Web.Webpages.Razor.xml
+C:\Users\ngogi\Downloads\Đồ án nhóm 6\AdminBanHoa\AdminBanHoa\AdminBanHoa\bin\System.Web.Helpers.xml
+C:\Users\ngogi\Downloads\Đồ án nhóm 6\AdminBanHoa\AdminBanHoa\AdminBanHoa\bin\System.Web.Mvc.xml
+C:\Users\ngogi\Downloads\Đồ án nhóm 6\AdminBanHoa\AdminBanHoa\AdminBanHoa\bin\Newtonsoft.Json.xml
+C:\Users\ngogi\Downloads\Đồ án nhóm 6\AdminBanHoa\AdminBanHoa\AdminBanHoa\bin\System.Net.Http.Formatting.xml
+C:\Users\ngogi\Downloads\Đồ án nhóm 6\AdminBanHoa\AdminBanHoa\AdminBanHoa\bin\System.Web.Http.xml
+C:\Users\ngogi\Downloads\Đồ án nhóm 6\AdminBanHoa\AdminBanHoa\AdminBanHoa\bin\System.Web.Http.WebHost.xml
+C:\Users\ngogi\Downloads\Đồ án nhóm 6\AdminBanHoa\AdminBanHoa\AdminBanHoa\obj\Debug\AdminBanHoa.csproj.AssemblyReference.cache
+C:\Users\ngogi\Downloads\Đồ án nhóm 6\AdminBanHoa\AdminBanHoa\AdminBanHoa\obj\Debug\AdminBanHoa.csproj.CoreCompileInputs.cache
+C:\Users\ngogi\Downloads\Đồ án nhóm 6\AdminBanHoa\AdminBanHoa\AdminBanHoa\obj\Debug\AdminBanHoa.csproj.CopyComplete
+C:\Users\ngogi\Downloads\Đồ án nhóm 6\AdminBanHoa\AdminBanHoa\AdminBanHoa\obj\Debug\AdminBanHoa.dll
+C:\Users\ngogi\Downloads\Đồ án nhóm 6\AdminBanHoa\AdminBanHoa\AdminBanHoa\obj\Debug\AdminBanHoa.pdb

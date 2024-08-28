@@ -1,0 +1,85 @@
+﻿@model BanHoa.Models.KhachHang
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+<div style="height:130px"></div>
+<div class="background-UserLogin">
+    <div class="row align-items-start d-flex">
+        @if (Session["TenKH"] != null)
+        {
+            <div class="col-2">
+ 
+                    <div class="menu-user">
+                        <a onclick="location.href='@Url.Action("Index","User")'" href="#"><ion-icon name="person-outline"></ion-icon><span class="textmn-user">Tài Khoản</span></a>
+                        <a onclick="location.href='@Url.Action("DanhSachDonHang","Payment")'" href="#"><ion-icon name="clipboard-outline"></ion-icon><span class="textmn-user">Đơn Mua</span></a>
+                        <a onclick="location.href='@Url.Action("Logout","User")'" href="#"><ion-icon name="exit-outline"></ion-icon><span class="textmn-user">Đăng Xuất</span></a>
+                    </div>
+
+            </div>
+
+            <div class="col">
+                <div class="inf-user">
+                    <div class="inf-title">
+                        <div class="inf-titlemini">
+                            <h2> Hồ Sơ Của Tôi </h2>
+                            <p>Quản lý thông tin bảo mật người dùng</p>
+                        </div>
+
+                    </div>
+                    <div class="gachngang1" style="background-color: #CCCCCC ;text-align:center;align-items:center;"></div>
+
+                    <div class="inf-card">
+                        <div class="row">
+                            <div class="col">
+                                <div class="inf-text-user">
+                                    <table class="tb-user">
+                                        <tbody>
+                                            @*hàng 1*@
+                                            <tr>
+                                                <td class="tieudett">Họ và tên:</td>
+                                                <td>@Session["TenKH"].ToString()</td>
+                                            </tr>
+                                            @*hàng 2*@
+                                            <tr>
+                                                <td class="tieudett">Email:</td>
+                                                <td>@Session["Email"].ToString()</td>
+                                            </tr>
+                                            @*hàng 3*@
+                                            <tr>
+                                                <td class="tieudett">Địa chỉ:</td>
+                                                <td>@Session["DiaChi"].ToString()</td>
+                                            </tr>
+                                    </table>
+                                    <div style="height:20px;"></div>
+                                    <a href="@Url.Action("Edit", "User", new { id=Session["MaKH"]})" class="btn btn-primary">Sửa thông tin</a>
+                </div>
+
+                            </div>
+
+                            <div class="col-4">
+                                <div class="inf-img-user">
+                                    <div class="inf-img-user2">
+                                        <div class="khunganh border-neon">
+                                                    <img src="~/Content/img/Card-1.jpg" />
+                                        </div>
+                                    </div>
+                                    <p>Ảnh đại diện</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+      
+
+                </div>
+
+            </div>
+        }
+
+
+
+        </div>
+</div>
+
+
